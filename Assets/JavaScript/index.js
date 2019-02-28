@@ -4,7 +4,7 @@ const cart = [
         name: "panda",
         price:"$2.98",
         count:1,
-        image:<img src="Assets/Images/Heart_Print.jpg"></img>
+        image:'<img src="Assets/Images/Heart_Print.jpg"></img>'
     }
 ];
 
@@ -66,6 +66,6 @@ $(document).ready(function(){
         $(".toys").show();   
     }) 
 });
-$('.images').html(`<h1>${cart}</h1>`);
+$('newStuff').html(`<h1>${cart}</h1>`);
 console.log(cart[i]);
 
