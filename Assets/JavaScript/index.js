@@ -48,24 +48,20 @@ function clearCart() {
 }
 clearCart();
 
-$(document).ready(function(){
     $("#toys").click(function(){
         $(".product").hide();
         $(".toys").show();   
     }) 
-});
-$(document).ready(function(){
+
     $("#product").click(function(){
         $(".product").show();
         $(".toys").hide();   
     }) 
-});
-$(document).ready(function(){
+
     $("#home").click(function(){
         $(".product").show();
         $(".toys").show();   
     }) 
-});
 $('newStuff').html(`<h1>${cart}</h1>`);
 console.log(cart[i]);
 
