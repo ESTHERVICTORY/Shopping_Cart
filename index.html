@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -15,7 +15,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="js/jquery.mycart.js"></script>
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <title>Shopping Cart</title>
 </head>
@@ -26,13 +25,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        One of three columns
+                            <button class="nav-item">
+                                    <a class="nav-link" id ="home">Home</a>
+                            </button>
                     </div>
                     <div class="col-sm">
-                        One of three columns
+                            <button class="nav-item">
+                                    <a class="nav-link" id="toys">Toys</a>
+                            </button>
                     </div>
                     <div class="col-sm">
-                        One of three columns
+                            <button class="nav-item">
+                                    <a class="nav-link" id="product" >Product</a>
+                            </button>
                     </div>
                 </div>
             </div>
@@ -54,11 +59,13 @@
                                         <div class="col-sm-3">
                                             <img src="Assets/Images/jumbo.jpg">
                                         </div>
+                                        <p>Jumbo</p>
                                         </div>
                                         <div class="product">
                                         <div class="col-sm-3">
                                             <img src="Assets/Images/Heart_Print.jpg">
                                         </div>
+                                        <p>Heart_Print</p>
                                         </div>
                                         <div class="product">
                                         <div class="col-sm-3">
@@ -83,36 +90,40 @@
                                             <div class="col-sm-3">
                                                 <img src="Assets/Images/pikachu.jpg">
                                             </div>
+                                            <p>pikachu</p>
                                         </div>
-                                        <p>pikachu</p>
+                                    
                                     </div>
                                     <div class="row">
                                         <div class="product">
                                             <div class="col-sm-6">
                                                 <img src="Assets/Images/Sun_Print.jpg">
                                             </div>
+                                            <p>Sun_Print</p>
                                         </div>
                                         <div class="toys">
                                             <div class="col-sm-6">
                                                 <img src="Assets/Images/toothless.jpg">
                                             </div>
+                                            <p>toothless</p>
                                         </div>
                                     </div>
                                 </div>
                             </image>
                         </div>
                         <div class="col-sm-2">
-                            One of three columns
+                            Shopping Cart
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary">Checkout</a>
         </div>
         <div class="card-footer text-muted">
             2 days ago
         </div>
     </div>
+    <script src="Assets/JavaScript/index.js"></script>
 </body>
 
 </html>
