@@ -42,8 +42,9 @@ function addProduct(name, price, count, image) {
 addProduct();
 
 function clearCart() {
-cart.empty
-
+    $(".btn btn-primary").click(function(){  
+        cart.empty
+    })
 }
 clearCart();
 
@@ -65,3 +66,6 @@ $(document).ready(function(){
         $(".toys").show();   
     }) 
 });
+$('.images').html(`<h1>${cart}</h1>`);
+console.log(cart[i]);
+
