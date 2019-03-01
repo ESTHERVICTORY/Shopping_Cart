@@ -1,0 +1,13 @@
+
+img{
+    height:100px ;
+    width:150px;
+    grid-column-gap: 5px;
+    grid-gap: 5px;
+    border-top: 10px;
+}
+html{
+    background-color: blue;
+}
+
+
