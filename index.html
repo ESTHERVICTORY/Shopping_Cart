@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></script>
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -25,23 +26,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                            <button class="nav-item">
-                                    <a class="nav-link" id ="home">Home</a>
-                            </button>
+                        <button class="nav-item">
+                            <a class="nav-link" id="home">Home</a>
+                        </button>
                     </div>
                     <div class="col-sm">
-                            <button class="nav-item">
-                                    <a class="nav-link" id="toys">Toys</a>
-                            </button>
+                        <button class="nav-item">
+                            <a class="nav-link" id="toys">Toys</a>
+                        </button>
                     </div>
                     <div class="col-sm">
-                            <button class="nav-item">
-                                    <a class="nav-link" id="product" >Product</a>
-                            </button>
+                        <button class="nav-item">
+                            <a class="nav-link" id="product">Product</a>
+                        </button>
                     </div>
+                    <input id="itemName" placeholder="name"> </input>
+                    <button id="Search">Search</button>
                 </div>
             </div>
-
         </div>
         <div class="card-body">
             <h5 class="card-title">Shopping Cart</h5>
@@ -55,63 +57,75 @@
                             <image class="images">
                                 <div class="container">
                                     <div class="row">
-                                            <div class="product">
-                                        <div class="col-sm-3">
-                                            <img src="Assets/Images/jumbo.jpg">
-                                        </div>
-                                        <p>Jumbo</p>
+                                        <div class="product">
+                                            <div class="col-sm-3">
+                                                <img src="Assets/Images/jumbo.jpg">
+                                            </div>
+                                            <p class="name">Jumbo</p>
+                                            <span>Price = $10.78 </span>
+                                            <br>
+                                            <button class="add" data-id="1" data-name="Jumbo" data-summary="summary"
+                                                data-price="1.98" data-count="1">Add to cart</button>
                                         </div>
                                         <div class="product">
-                                        <div class="col-sm-3">
-                                            <img src="Assets/Images/Heart_Print.jpg">
-                                        </div>
-                                        <p>Heart_Print</p>
+                                            <div class="col-sm-3">
+                                                <img src="Assets/Images/Heart_Print.jpg">
+                                            </div>
+                                            <p class="name"> Heart_Print</p>
+                                            <span>Price = $18.67 </span>
                                         </div>
                                         <div class="product">
-                                        <div class="col-sm-3">
-                                            <img src="Assets/Images/tree.jpg">
+                                            <div class="col-sm-3">
+                                                <img src="Assets/Images/tree.jpg">
+                                            </div>
+                                            <p class="name">tree</p>
+                                            <span>Price = $23.61 </span>
                                         </div>
-                                        <p>tree</p>
-                                    </div></div>
+                                    </div>
                                     <div class="row">
                                         <div class="toys">
                                             <div class="col-sm-3">
                                                 <img src="Assets/Images/kunfu_Panda.jpg">
                                             </div>
-                                            <p>kunfu_Panda</p>
+                                            <p class="name">kunfu_Panda</p>
+                                            <span>Price = $16.98 </span>
                                         </div>
                                         <div class="toys">
                                             <div class="col-sm-3">
                                                 <img src="Assets/Images/panda.jpg">
                                             </div>
-                                            <p>panda</p>
+                                            <p class="name">panda</p>
+                                            <span>Price = $21.03 </span>
                                         </div>
                                         <div class="toys">
                                             <div class="col-sm-3">
                                                 <img src="Assets/Images/pikachu.jpg">
                                             </div>
-                                            <p>pikachu</p>
+                                            <p class="name">pikachu</p>
+                                            <span>Price = $8.67 </span>
                                         </div>
-                                    
+
                                     </div>
                                     <div class="row">
                                         <div class="product">
                                             <div class="col-sm-6">
                                                 <img src="Assets/Images/Sun_Print.jpg">
                                             </div>
-                                            <p>Sun_Print</p>
+                                            <p class="name">Sun_Print</p>
+                                            <span>Price = $26.43 </span>
                                         </div>
                                         <div class="toys">
                                             <div class="col-sm-6">
                                                 <img src="Assets/Images/toothless.jpg">
                                             </div>
-                                            <p>toothless</p>
+                                            <p class="name">toothless</p>
+                                            <p>Price = $19.56</p>
                                         </div>
                                     </div>
                                 </div>
                             </image>
                         </div>
-                        <div class="col-sm-2">
+                        <div id="newStuff" class="col-sm-2">
                             Shopping Cart
                         </div>
                     </div>
@@ -120,7 +134,7 @@
             <a href="#" class="btn btn-primary">Checkout</a>
         </div>
 
-        <section id="newStuff">
+        <section>
 
         </section>
         <div class="card-footer text-muted">
